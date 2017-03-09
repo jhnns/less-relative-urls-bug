@@ -1,0 +1,15 @@
+{
+  "name": "less-relative-urls-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "error": "cd ./a/a && ../../node_modules/.bin/lessc -ru - < a.less",
+    "ok": "cd ./a && ../node_modules/.bin/lessc -ru - < a.less"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^2.7.2"
+  }
+}
